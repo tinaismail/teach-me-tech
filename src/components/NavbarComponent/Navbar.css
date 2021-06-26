@@ -74,6 +74,18 @@ span {
 	z-index: 5;
 }
 
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form-header {
     display: flex;
     align-items: center;
@@ -85,4 +97,19 @@ span {
 
 .form-item {
     margin-bottom: 10px;
+}
+
+.button {
+    background:#007bed;
+	color: white;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	font-size: 0.8em;
+	padding: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    filter: brightness(120%);
 }

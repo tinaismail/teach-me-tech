@@ -11,7 +11,7 @@ const Navbar = () => {
     const closeRegister = () => setRegister(false);
 
     const [login, setLogin] = useState(false);
-	const handleLogin = () => setLogin(!register);
+	const handleLogin = () => setLogin(!login);
     const closeLogin = () => setLogin(false);
 
     return (
@@ -41,6 +41,9 @@ const Navbar = () => {
                         <label>Password: </label>
                         <input type='password' name='password' required></input>
                     </div>
+                    <div className='form-item'>
+                        <input type='submit' value='Register' className='button'></input>
+                    </div>
                 </form>
             </div> 
             }
@@ -58,6 +61,9 @@ const Navbar = () => {
                     <div className='form-item'>
                         <label>Password: </label>
                         <input type='password' name='password' required></input>
+                    </div>
+                    <div className='form-item'>
+                        <input type='submit' value='Log In' className='button'></input>
                     </div>
                 </form>
             </div> 
