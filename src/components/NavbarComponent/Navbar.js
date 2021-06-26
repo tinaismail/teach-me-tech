@@ -10,12 +10,16 @@ const Navbar = () => {
 	const handleRegister = () => setRegister(!register);
     const closeRegister = () => setRegister(false);
 
+    const [login, setLogin] = useState(false);
+	const handleLogin = () => setLogin(!register);
+    const closeLogin = () => setLogin(false);
+
     return (
         <>
             <div className='nav-container'>
                 <h1><GiGraduateCap style={{color:'#007bed'}}/>  teachme<span>tech</span></h1>
                 <div className='nav-flex-item'>
-                    <p>Log In</p>
+                    <p onClick={handleLogin}>Log In</p>
                     <div id='join-button' onClick={handleRegister}>
                         <p>Join for free</p>
                         <BsArrowRight style={{height:'1.5em', width:'1.5em'}}/>
@@ -29,6 +33,24 @@ const Navbar = () => {
                     <AiFillCloseCircle style={{cursor:'pointer'}} onClick={closeRegister}/>
                 </div>
                 <form action='/register' method='post'>
+                    <div className='form-item'>
+                        <label>Username: </label>
+                        <input type='text' name='username' required></input>
+                    </div>
+                    <div className='form-item'>
+                        <label>Password: </label>
+                        <input type='password' name='password' required></input>
+                    </div>
+                </form>
+            </div> 
+            }
+            { login && 
+            <div className='login-container'>
+                <div className='form-header'>
+                    <h3>Welcome back</h3>
+                    <AiFillCloseCircle style={{cursor:'pointer'}} onClick={closeLogin}/>
+                </div>
+                <form action='/login' method='post'>
                     <div className='form-item'>
                         <label>Username: </label>
                         <input type='text' name='username' required></input>
