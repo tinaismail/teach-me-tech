@@ -1,6 +1,7 @@
 import './App.css';
-import DisplayCase from './components/DisplayCase';
-import Navbar from './components/Navbar';
+import DisplayCase from './components/DisplayCaseComponent/DisplayCase';
+import Navbar from './components/NavbarComponent/Navbar';
+
 
 function App() {
   return (

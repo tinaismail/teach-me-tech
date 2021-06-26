@@ -1,7 +1,7 @@
 import React from 'react';
 import './DisplayCase.css'
-import DisplayImg from '../img/displaycase.svg';
-import DisplayImg2 from '../img/tutordisplay.svg'
+import DisplayImg from '../../img/displaycase.svg';
+import DisplayImg2 from '../../img/tutordisplay.svg'
 
 const DisplayCase = () => {
     return (
