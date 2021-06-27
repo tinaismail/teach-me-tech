@@ -7,7 +7,7 @@ const DisplayCase = () => {
     return (
         <>
             <div id="display-container">
-                <p>Receive free tutoring in technology.</p>
+                <p>Receive free tutoring in technology. Simplified just for you.</p>
                 <div className='img-container'>
                     <img src={DisplayImg}/>
                     <img src={DisplayImg2}/>    

@@ -1,0 +1,45 @@
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.72);
+    padding: 30px;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    line-height: 2;
+    font-weight: 600;
+    color: #007bed;
+}
+
+input {
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+textarea {
+    width: 70%;
+    margin-bottom: 30px;
+    height: 150px;
+}
+
+#submit {
+    width: 30%;
+    height: 30px;
+    color: white;
+    background-color: #007bed;
+    outline: 0;
+    border: 0;
+    border-radius: 2px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+}

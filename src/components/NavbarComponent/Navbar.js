@@ -2,6 +2,7 @@ import { GiGraduateCap } from "react-icons/gi";
 import { BsArrowRight } from "react-icons/bs";
 import { AiFillCloseCircle } from "react-icons/ai";
 import React, { useState } from 'react';
+import { Link as LinkR } from 'react-router-dom';
 import './Navbar.css'
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
                 <div className='nav-flex-item'>
                     <p onClick={handleLogin}>Log In</p>
                     <div id='join-button' onClick={handleRegister}>
-                        <p>Join for free</p>
+                        <p className='blue-button'>Join for free</p>
                         <BsArrowRight style={{height:'1.5em', width:'1.5em'}}/>
                     </div>
                 </div>
@@ -42,7 +43,10 @@ const Navbar = () => {
                         <input type='password' name='password' required></input>
                     </div>
                     <div className='form-item'>
-                        <input type='submit' value='Register' className='button'></input>
+                        <LinkR to='/loggedin' className='button'>Register</LinkR>
+                    </div>
+                    <div className='form-item'>
+                        <LinkR to='/volunteer' id='volunteer-link'>Want to volunteer as a tutor?</LinkR>
                     </div>
                 </form>
             </div> 
@@ -63,7 +67,7 @@ const Navbar = () => {
                         <input type='password' name='password' required></input>
                     </div>
                     <div className='form-item'>
-                        <input type='submit' value='Log In' className='button'></input>
+                        <LinkR to='/loggedin' className='button'>Log in</LinkR>
                     </div>
                 </form>
             </div> 

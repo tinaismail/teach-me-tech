@@ -1,13 +1,19 @@
 import './App.css';
-import DisplayCase from './components/DisplayCaseComponent/DisplayCase';
-import Navbar from './components/NavbarComponent/Navbar';
-
+import Home from './pages'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import loggedInPage from './pages/loggedin';
+import volunteerForm from './pages/volunteerForm';
 
 function App() {
   return (
     <>
-      <Navbar/>
-      <DisplayCase/>
+      <Router>
+        <Switch>
+          <Route path='/' component={Home} exact />
+          <Route path='/loggedin' component={loggedInPage} exact />
+          <Route path='/volunteer' component={volunteerForm} exact />
+        </Switch>
+      </Router>
     </>
   );
 }

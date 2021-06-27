@@ -48,7 +48,7 @@ span {
     cursor: pointer;
 }
 
-.nav-flex-item p:hover {
+.nav-flex-item .blue-button:hover {
     opacity: 50%;
     cursor: pointer;
 }
@@ -96,7 +96,12 @@ span {
 }
 
 .form-item {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#volunteer-link {
+    color: #007bed;
+    font-size: 1.6rem;
 }
 
 .button {
@@ -106,6 +111,7 @@ span {
 	border: none;
 	border-radius: 5px;
 	font-size: 0.8em;
+    text-decoration: none;
 	padding: 10px;
 }
 

@@ -1,0 +1,33 @@
+#tutor-button {
+    background: #007bed;
+    color: white;
+    height: 70px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tutor-button a {
+    margin-top: 0;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#tutor-button:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+#logout {
+    text-decoration: none;
+    color: black;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+#logout:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
